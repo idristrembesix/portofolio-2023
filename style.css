@@ -1,0 +1,626 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 2px 0px 20px rgb(0, 90, 94);
+
+}
+
+nav {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+header a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+header a span {
+    color: aqua;
+}
+
+header a:hover {
+    font-weight: bold;
+    color: aqua;
+}
+
+.namagw {
+    font-weight: bold;
+    color: gold;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+
+}
+
+.namagw span {
+    color: aqua;
+}
+
+.mn ul{
+    display: flex;
+    gap: 30px;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(2deg, black, rgb(4, 70, 70));
+}
+
+.home h1 {
+    color: white;
+    position: relative;
+    top: 15rem;
+    left: 6rem;
+    font-size: 2.3rem;
+    font-weight: 900;
+    width: 800px;
+    z-index: 1;
+}
+
+.home h1 span {
+    color: aqua;
+    z-index: 1;
+}
+
+.h5 {
+    color: white;
+    position: relative;
+    top: 16rem;
+    left: 6rem;
+    width: 700px;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.h5 span {
+    color: aqua;
+}
+
+.Sosial-media {
+    display: flex;
+    background: transparent;
+    position: relative;
+    bottom: -2em;
+    left: 1em;
+}
+
+.Sosial-media a {
+    height: 30px;
+    font-size: 40%;
+    color: aqua;
+    width: 30px;
+    border-radius: 40%;
+    margin-right: 10px;
+    border: 2px solid aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 1em aqua;
+}
+
+.Sosial-media i:hover {
+    font-weight: bold;
+    color: rgb(152, 129, 0);
+}
+
+.Sosial-media i {
+    position: relative;
+    font-size: 20px;
+    left: 4px;
+    top: 4px;
+}
+
+.factor {
+    position: absolute;
+    left: 50rem;
+    top: -6rem;
+    font-size: 3em;
+
+}
+
+.factor img {
+    border-radius: 60%;
+
+}
+
+.gambar {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(10deg, black, gold);
+    position: absolute;
+    border: 2px solid rgb(194, 165, 2);
+    right: 12em;
+    border-radius: 200px;
+    top: 20rem;
+    box-shadow: 0 0 3em gold;
+    animation: effect 10s ease infinite;
+
+}
+
+.btn-home {
+    height: 30px;
+    width: 90px;
+    background: aqua;
+    margin-left: 15rem;
+    margin-top: 16rem;
+    border-radius: 32px;
+    box-shadow: 0 0 2em aqua;
+}
+
+.btn-home h4 {
+    padding-top: 8px;
+    padding-left: 7px;
+    font-size: 10px;
+    color: black;
+}
+
+.gambar h1 {
+    margin-top: -7rem;
+    color: #000000;
+}
+
+@keyframes effect {
+    0% {
+        top: 100px;
+    }
+
+    60% {
+        top: 180px;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
+@media screen and (max-width: 1200px) {
+     .home{
+        width: 90%;
+    }
+}
+
+.about {
+    background: linear-gradient(23deg, black, aqua);
+    height: 90vh;
+    border-radius: 32px;
+}
+
+.about h1 {
+    color: rgb(0, 0, 0);
+    margin-left: 42.4rem;
+    position: relative;
+    top: 5rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    width: 150px;
+}
+
+.p1 {
+    margin-left: 38em;
+    margin-top: 15rem;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.service {
+    background: black;
+    height: 110vh;
+}
+
+.service h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+    left: 39.5rem;
+    top: 7rem;
+    width: 600px;
+}
+
+.service h1 span {
+    color: aqua;
+}
+
+.span h3 {
+    color: white;
+    position: relative;
+    left: 39rem;
+    top: 7rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.box-do {
+    background: linear-gradient(2deg, black, aqua);
+    ;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    margin-top: 10rem;
+    box-shadow: 0 0 2.4em aqua;
+    transition: all .4s ease;
+}
+
+.gabungan {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container {
+    display: flex;
+    margin-left: 13rem;
+    gap: 3rem;
+}
+
+.icon1 i {
+    font-size: 60px;
+    color: aquamarine;
+}
+
+.bulat {
+    height: 90px;
+    width: 100px;
+    background: rgb(31, 31, 31);
+    border-radius: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px gold;
+}
+
+.tulisan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-inline: 20px;
+
+}
+
+.tulisan h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+
+.imgg img {
+    position: absolute;
+    left: -38rem;
+    top: 45rem;
+    border-radius: 32px;
+    border: 4px solid black;
+    box-shadow: 0 0 3em black
+}
+
+.imgg {
+    width: 200px;
+    position: relative;
+    left: 2rem;
+    bottom: 57rem;
+    right: -10rem;
+
+}
+
+.box-do:hover {
+    transform: translateY(-20px);
+}
+
+.box-line {
+    margin-bottom: 23px;
+    margin-left: 3rem;
+
+}
+
+.skils {
+    height: 150vh;
+    background: linear-gradient(-2deg, black, aqua);
+}
+
+.portofolio {
+    height: 160vh;
+    border-radius: 23px;
+    background: black;
+
+
+}
+
+.container11 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.container11 span {
+    margin-left: 30rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.container11 i {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: black;
+}
+
+.portofolio h3 {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-left: 38.3rem;
+    position: relative;
+    bottom: -11rem;
+}
+
+.portofolio span {
+    color: aqua;
+
+}
+
+.box01 {
+    height: 300px;
+    width: 300px;
+    background: rgb(31, 31, 31);
+    transition: all .3s;
+    border-radius: 32px;
+    border: 4px solid aqua;
+    box-shadow: 0 0 2em aqua;
+}
+
+.box01:hover {
+    transform: scale(1.2);
+}
+
+.box-cont {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: -4rem;
+
+}
+
+.box01 img {
+    padding-left: 2rem;
+    border-radius: 42px;
+}
+
+.paragraf {
+    color: white;
+    font-size: 12px;
+    padding-left: 6px;
+}
+
+.images img {
+    border-radius: 23px;
+    border: 4px solid aqua;
+    box-shadow: 0 0 2em aqua;
+
+}
+
+.gambar1 {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+.images {
+    overflow: hidden;
+}
+
+.layers {
+    background: black;
+    height: 230px;
+    width: 200px;
+    padding: 23px;
+}
+
+.layers {
+    background: aqua;
+    backdrop-filter: blur(7px);
+    height: 217px;
+    width: 300px;
+    position: relative;
+    bottom: 220px;
+    transition: .6s;
+    left: 250px;
+    border-radius: 23px;
+    overflow: hidden;
+    transform: translateX(70px);
+
+}
+
+.images:hover .layers {
+    transition: .6s;
+    left: 0;
+}
+
+.contact {
+    height: 95vh;
+    background: linear-gradient(-1deg, black, aqua);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+}
+
+.contact h1 {
+    color: #000000;
+    position: relative;
+    bottom: 2rem;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 4em #000000;
+
+
+}
+
+.contact span {
+    color: black;
+    margin-left: 10px;
+}
+
+.komentar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+    gap: 7px;
+
+}
+
+input {
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid black;
+}
+
+.gabungan2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10rem;
+
+}
+
+textarea {
+    width: 500px;
+    border-radius: 8px;
+    background: whitesmoke;
+
+}
+
+.tombol>button {
+    padding: 10px;
+    background: aqua;
+    border-radius: 32px;
+}
+
+.frame {
+    margin-top: -16rem;
+    margin-right: 23rem;
+    margin-left: 5rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    background: rgb(0, 96, 96);
+    animation: idris 10s infinite;
+
+}
+
+.frame2 {
+    margin-top: -16rem;
+    margin-right: 23rem;
+    margin-left: 5rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 20%;
+    background: rgb(0, 93, 93);
+    animation: idris 10s infinite;
+    margin-left: 6rem;
+    margin-top: 3rem;
+    z-index: 1;
+}
+
+@keyframes idris {
+    0% {
+        rotate: 0;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    100% {
+        rotate: 0;
+    }
+}
+
+.menu {
+    display: none;
+    margin-top: 2rem;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 1;
+    align-items: flex-start;
+}
+.the-footer-good{
+    height: 40vh;
+    background: #000000;
+    color: white
+}
+.skils{
+    height: 100vh;
+    border-radius: 60px;
+    margin-top: 2rem;
+}
+/* .line-black{
+    width: 100%;
+    height: 10px;
+    background: black; */
+
+
+.skils h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+.all-container-skils{
+    margin-left: 5rem;
+    margin-top: 5rem;
+    gap: 300rem;
+}
+.line-all-01{
+    gap: 10px;
+}
+.text-beda{
+    margin-top: -5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.line-all-01 p{
+    margin-left: 24rem;
+}
